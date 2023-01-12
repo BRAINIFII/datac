@@ -2,7 +2,8 @@ prac3(Implement EtherChannel)
 link: https://itexamanswers.net/6-4-1-packet-tracer-implement-etherchannel-instructions-answer.html
 comm: curl -sL https://raw.githubusercontent.com/BRAINIFII/datac/master/comm/prac3
 steps: curl -sL https://raw.githubusercontent.com/BRAINIFII/datac/master/steps/prac3
-file:
+file: https://raw.githubusercontent.com/BRAINIFII/datac/master/file/prac3.pkt
+curl --output prac3.pkt --url https://raw.githubusercontent.com/BRAINIFII/datac/master/file/prac3.pkt
 
 prac4A(DMVPN Tunnels)
 link: https://www.ccna6rs.com/20-1-2-lab-configure-secure-dmvpn-tunnels-answers/
