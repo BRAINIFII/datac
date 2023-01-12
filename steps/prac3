@@ -1,0 +1,83 @@
+Step 1: Design the Topology.
+
+Step 2: Configure the network.
+Examine the default port status and manipulate DTP.
+
+
+Switch D1:
+
+Switch A1:
+
+Change the administrative mode of interface f0/1 on A1 to Dynamic Desirable with the
+interface configuration command switchport mode dynamic desirable. Then check the
+interface switchport status and you will see that it is in trunk mode. The output of show
+interfaces trunk will show the protocol as desirable. The output of show interfaces trunk on
+D1 will show auto.
+
+
+To see this, configure D1 interface g1/0/6 with the switchport mode trunk command. Then
+you should once again see that A1 has automatically negotiated a trunk, this time between
+f0/2 and D1 g1/0/6.
+
+Then go to D1 and configure interfaces g1/0/5 and g1/0/6 as trunks with the additional
+command switchport nonegotiate. Then you re- enable the interfaces at A1, you will see that
+they do not form trunks with D1.
+
+
+At each switch, issue the global configuration command default interface range first-int-id -
+last-int-id to reset the interfaces back to their defaults.
+
+Configure Basic Device Settings
+Switch D1:
+
+Switch D2:
+
+Switch A1:
+
+Step 3: Configure Static EtherChannel.
+• Configure and verify trunking between D2 and A1.
+Verify the trunks have formed.
+
+Configure and verify a static EtherChannel link between D2 and A1.
+Add the command channel-group 1 mode on to all the trunk interfaces between D2 and A1.
+
+Verify the EtherChannel has formed by examining the output of the show ether channel summary
+command. Also check the spanning tree status. You will see that there is a change to the topology
+because Po1 replaced interfaces F0/3 and F0/4 with a lower cost.
+
+Make a change to the EtherChannel.
+On D2 and A1, create VLAN 999 with the name NATIVE_VLAN.
+
+
+On D2 and A1, modify interface port-channel 1 so that it uses VLAN 999 as the native VLAN.
+
+Verify the change has been applied by examining the output of show interfaces trunk.
+
+Step 4: Implement EtherChannel Using PAgP.
+Configure and verify trunking between D1 and A1.
+Verify the trunks are still working.
+
+Configure and verify an EtherChannel using PAgP between D1 and A1.
+Add the command channel-group 2 mode desirable non-silent to all the trunk interfaces between D1 and A1.
+
+Verify the EtherChannel has formed by examining the output of the show etherchannel summary
+command.
+
+Make a change to the EtherChannel.
+On D1, create VLAN 999 with the name NATIVE_VLAN.
+
+On D1 and A1, modify interface port-channel 2 so that it uses VLAN 999 as the native VLAN.
+
+Verify the change has been applied by examining the output of show interfaces trunk | iPort|Po3.
+
+Step 5: Implement EtherChannel using LACP.
+• Configure and verify trunking between D1 and D2.
+Verify the trunks are still operational.
+
+Configure and verify an EtherChannel using LACP between D1 and D2.
+Add the command channel-group 4 mode active to all the trunk interfaces between D1 and D2.
+
+
+Make a change to the EtherChannel.
+On D1 and D2, modify interface port-channel 4 so that it uses VLAN 999 as the native VLAN.
+Verify the change has been applied by examining the output of show interfaces trunk | iPort|Po4.

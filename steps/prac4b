@@ -1,0 +1,17 @@
+Implement a DMVPN Phase 1 Hub-to-Spoke Topology
+Build the Network and Configure Basic Device Settings
+In Part 1, you will set up the network topology and configure basic settings if the network is not already configured. This lab uses the same topology and final configurations from the Lab - Implement a DMVPN Phase 1 Hub-to-Spoke Topology.
+Cable the network as shown in the topology.
+Attach the devices as shown in the topology diagram, and cable as necessary.
+Configure initial settings for each router and the Layer 3 switch.
+Console into each device, enter global configuration mode, and apply the initial settings for the lab if the devices are not already configured.
+Verify connectivity in the network.
+Configure DMVPN Phase 3
+Modify the tunnel interfaces on the spoke routers.
+Modify the configuration on the spoke routers to enable NHRP routing shortcuts.
+Modify the configuration of hub router to send NHRP redirect messages.
+Verify DMVPN Phase 3
+Observe dynamic tunnel creation.
+View the routing table.
+Verify the DMVPN
+View NHRP Mappings

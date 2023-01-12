@@ -1,0 +1,31 @@
+Configure Secure DMVPN Tunnels
+
+Addressing Table
+
+Required Resources
+3 Routers (Cisco 4221 with Cisco IOS XE Release 16.9.4 universal image or comparable)
+1 Switch (Cisco 3560 with Cisco IOS XE Release 16.9.4 universal image or comparable)
+1 PC (Choice of operating system with a terminal emulation program installed)
+Console cables to configure the Cisco IOS devices via the console ports
+Ethernet cables as shown in the topology
+
+Instructions
+Build the Network and Configure Basic Device Settings
+In Part 1, you will set up the network topology and configure basic settings.
+Cable the network as shown in the topology.
+Attach the devices as shown in the topology diagram, and cable as necessary.
+Configure initial settings for each router and the Layer 3 switch.
+Close configuration window
+Configure and Verify DMVPN Phase 1
+In this part of the lab, you will configure DMVPN Phase 1 to create DMVPN tunnels between the spoke routers R2 and R3, and the hub router, R1. DMVPN is very flexible and there are many options for implementation beyond what is being done in this lab.
+In Phase 1 DMVPN, all spoke router traffic must pass through the hub router as shown in the topology diagram.
+
+Note: In this lab, you will need to change the configuration of the DMVPN Layer 3 switch. Normally, you would not need to configure this device. The DMVPN switch is simulating the ISP transport network.
+Verify connectivity in the underlay network.
+Configure the tunnel interface on the hub router.
+Configure the R2 and R3 spoke router tunnel interfaces.
+Close configuration window
+Configure EIGRP Routing for the Tunnel Networks
+Configure dynamic routing for the overlay network.
+Configure dynamic routing for the underlay network.
+Verify DMVPN Phase 1 operation.

@@ -1,0 +1,22 @@
+Implement BGP Path Manipulation
+Instructions
+Build the Network and Configure Basic Device Settings and Interface Addressing
+In Part 1, you will set up the network topology and configure basic settings and interface addressing on routers.
+Cable the network as shown in the topology.
+Attach the devices as shown in the topology diagram, and cable as necessary.
+Configure basic settings for each router.
+Console into each router, enter global configuration mode, and apply the basic settings and interface addressing. A command list for each router is listed below to perform initial configuration.
+Configure and Verify Multi-Protocol BGP on all Routers
+In Part 2, you will configure and verify Multi-Protocol BGP on all routers to achieve full connectivity between the routers. The text below provides you with the complete configuration for R1. You will use this to inform your configuration of R2 and R3. The configuration being used here is not meant to represent best practice, but to assess your ability to complete the required configurations.
+On R1, create the core BGP configuration.
+On R1, configure the IPv4 unicast address family.
+On R1, configure the IPv6 unicast address family.
+Configure MP-BGP on R2 and R3 as you did in the previous step.
+Verify that MP-BGP is operational.
+Configure and Verify BGP Path Manipulation Settings on all Routers
+In Part 3, you will configure path manipulation tools for BGP. The way these tools are being used here is not meant to represent best practice, but to assess your ability to complete the required configurations.
+Configure ACL-based route filtering.
+Configure prefix-list-based route filtering.
+Configure an AS-PATH ACL to filter routes being advertised.
+Configure IPv6 prefix-list-based route filtering.
+Configure BGP path attribute manipulation to effect routing.

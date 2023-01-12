@@ -1,0 +1,20 @@
+Implement a DMVPN Phase 3 Spoke-to-Spoke Topology
+Part 1: Build the Network and Verify DMVPN Phase 3 Operation
+In Part 1, you will set up the network topology and configure basic settings if the network is not already  configured. This lab uses the same topology and final configurations from the Implement a DMVPN Phase 3 Spoke-to-Spoke Topology lab.
+Step 1: Cable the network as shown in the topology.
+Connect the devices as shown in the topology diagram.
+Step 2: Configure initial settings for each router and the Layer 3 switch.
+Lab - Configure Secure DMVPN Tunnels
+Step 3: Verify connectivity in the network.
+Step 4: Verify DMVPN Phase 3 operation.
+Part 2: Secure DMVPN Phase 3 Tunnels
+Now that the tunnels have been configured and DMVPN connectivity has been verified, the tunnels can be  secured with IPsec.
+Step 1: Create the IKE policy.
+Step 2: Configure the ISAKMP key.
+Step 3: Create and configure the IPsec transform set.
+Step 4: Create the IPsec profile.
+Step 5: Apply the IPsec profile to the tunnel interface.
+Step 6: Configure R2 and R3 with IPsec.
+Step 7: Verify DMVPN Phase 3 operation.
+Step 8: Verify IPsec configuration.
+Step 9: You have successfully configured and verified IPsec on DMVPN Phase 3 tunnels.

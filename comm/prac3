@@ -1,0 +1,88 @@
+SWA to SWB
+G0/1 to G0/1
+G0/2 to G0/2
+
+SWA to SWC
+F0/21 to F0/21
+F0/22 to F0/22
+
+SWB to SWC
+F0/23 to F0/23
+F0/24 to F0/24
+
+Configure:
+---- Conn 1 (PAgP EtherChannel)-----
+SWA
+en
+conf t
+interface GigabitEthernet0/1
+switchport mode trunk
+channel-group 1 mode desirable
+exit
+interface GigabitEthernet0/2
+switchport mode trunk
+channel-group 1 mode desirable
+
+SWB
+en
+conf t
+interface GigabitEthernet0/1
+switchport mode trunk
+channel-group 1 mode desirable
+exit
+interface GigabitEthernet0/2
+switchport mode trunk
+channel-group 1 mode desirable
+
+---- Conn 2 (LACP EtherChannel) -----
+
+SWA
+en
+conf t
+interface FastEthernet0/21
+switchport mode trunk
+channel-group 2 mode active
+exit
+interface FastEthernet0/22
+switchport mode trunk
+channel-group 2 mode active
+
+SWC
+en
+conf t
+interface FastEthernet0/21
+switchport mode trunk
+channel-group 2 mode active
+exit
+interface FastEthernet0/22
+switchport mode trunk
+channel-group 2 mode active
+
+---- Conn 3 (LACP EtherChannel) -----
+
+SWB
+en
+conf t
+interface FastEthernet0/23
+switchport mode trunk
+channel-group 3 mode passive
+exit
+interface FastEthernet0/24
+switchport mode trunk
+channel-group 3 mode passive
+
+SWC
+en
+conf t
+interface FastEthernet0/23
+switchport mode trunk
+channel-group 3 mode active
+exit
+interface FastEthernet0/24
+switchport mode trunk
+channel-group 3 mode active
+
+T/P
+show etherchannel summary
+show spanning-tree
+show interfaces trunk

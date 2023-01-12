@@ -1,0 +1,19 @@
+Path Control Using PBR
+Instructions
+
+Part 1: Build the Network and Configure Basic Device Settings
+Step 1: Cable the network as shown in the topology.
+Step 2: Configure basic settings for each device.
+
+Part 2: Configure and Verify Routing
+Step 1: Configure Routing.
+Step 2: Verify OSPF routing
+Step 3: Verify end-to-end connectivity and path taken
+
+Part 3: Configure PBR to Provide Path Control
+Step 1: Configure PBR on R1.
+Step 2: Test the policy.
+
+Part 4: Configure Local PBR to Provide Path Control
+Step 1: Configure Local PBR on R1.
+Step 2: Test Local PBR on R1.

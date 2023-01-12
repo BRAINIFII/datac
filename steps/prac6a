@@ -1,0 +1,22 @@
+Control Routing Updates
+Instructions
+Part 1: Build the Network and Configure Basic Device Settings
+Step 1: Cable the network as shown in the topology.
+Step 2: Configure basic settings for each device.
+
+Part 2: Configure Routing and Redistribution
+Step 1: Configure Routing.
+Step 2: Verify EIGRP and OSPF routing
+Step 3: Configure Redistribution on R2
+Step 4: Verify Redistribution
+
+Part 3: Filter Redistributed Routes using a Distributed List and ACL.
+Step 1: Configure an ACL and distribute list on R2
+Step 2: Verify the configuration
+
+Part 4: Filter Redistributed Routes using a Distribute List and Prefix List
+Step 1: Filter redistributed routes using a distributed list and prefix list.
+
+Part 5: Filter Redistributed Routes using a Route Map.
+Step 1: Filter redistributed routes using a route map.
+Step 2: Filter redistributed routes and set attributes using a route map.
