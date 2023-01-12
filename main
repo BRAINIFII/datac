@@ -1,13 +1,31 @@
 prac3(Implement EtherChannel)
-
 link: https://itexamanswers.net/6-4-1-packet-tracer-implement-etherchannel-instructions-answer.html
-comm:
+comm: curl -sL https://raw.githubusercontent.com/BRAINIFII/datac/master/comm/prac3
+steps: curl -sL https://raw.githubusercontent.com/BRAINIFII/datac/master/steps/prac3
 file:
 
 prac4A(DMVPN Tunnels)
-
 link: https://www.ccna6rs.com/20-1-2-lab-configure-secure-dmvpn-tunnels-answers/
-comm:
-steps:
-file:
+comm: curl -sL https://raw.githubusercontent.com/BRAINIFII/datac/master/comm/prac4a
+steps: curl -sL https://raw.githubusercontent.com/BRAINIFII/datac/master/steps/prac4a
 
+prac4B(Hub-to-Spoke)
+steps: curl -sL https://raw.githubusercontent.com/BRAINIFII/datac/master/steps/prac4b
+
+prac4C(Spoke-to-Spoke)
+steps: curl -sL https://raw.githubusercontent.com/BRAINIFII/datac/master/steps/prac4c
+
+prac5A(BGP Communities)
+steps: curl -sL https://raw.githubusercontent.com/BRAINIFII/datac/master/steps/prac5a
+
+prac5B(BGP Path Manipulation)
+steps: curl -sL https://raw.githubusercontent.com/BRAINIFII/datac/master/steps/prac5b
+
+prac6A(Control Routing Updates)
+steps: curl -sL https://raw.githubusercontent.com/BRAINIFII/datac/master/steps/prac6a
+
+prac6B(Path Control Using PBR)
+steps: curl -sL https://raw.githubusercontent.com/BRAINIFII/datac/master/steps/prac6b
+
+prac7(Implement MPLS)
+steps: curl -sL https://raw.githubusercontent.com/BRAINIFII/datac/master/steps/prac7
